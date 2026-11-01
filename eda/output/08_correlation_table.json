@@ -1,0 +1,266 @@
+{
+  "table_name": "08_correlation_table",
+  "insight": "Strongest Pearson correlation: positive_ratings <-> negative_ratings (r = 0.901). Skewed columns (price, required_age, achievements, owners_mid, positive_ratings, negative_ratings, review_score, average_playtime, median_playtime) also include Spearman rank correlations. Post-launch fields are marked and must be excluded from ML features.",
+  "row_count": 36,
+  "columns": [
+    "field_1",
+    "field_2",
+    "pearson_r",
+    "spearman_r",
+    "is_post_launch"
+  ],
+  "data": [
+    {
+      "field_1": "price",
+      "field_2": "required_age",
+      "pearson_r": 0.0871,
+      "spearman_r": 0.0855,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "price",
+      "field_2": "achievements",
+      "pearson_r": -0.022,
+      "spearman_r": 0.1601,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "price",
+      "field_2": "owners_mid",
+      "pearson_r": 0.1775,
+      "spearman_r": 0.0581,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "price",
+      "field_2": "positive_ratings",
+      "pearson_r": 0.219,
+      "spearman_r": 0.2274,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "price",
+      "field_2": "negative_ratings",
+      "pearson_r": 0.1786,
+      "spearman_r": 0.1482,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "price",
+      "field_2": "review_score",
+      "pearson_r": 0.1002,
+      "spearman_r": 0.1464,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "price",
+      "field_2": "average_playtime",
+      "pearson_r": 0.1298,
+      "spearman_r": 0.0989,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "price",
+      "field_2": "median_playtime",
+      "pearson_r": 0.1934,
+      "spearman_r": 0.1009,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "achievements",
+      "pearson_r": -0.0092,
+      "spearman_r": 0.0378,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "owners_mid",
+      "pearson_r": 0.1386,
+      "spearman_r": 0.1146,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "positive_ratings",
+      "pearson_r": 0.0551,
+      "spearman_r": 0.092,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "negative_ratings",
+      "pearson_r": 0.0287,
+      "spearman_r": 0.1127,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "review_score",
+      "pearson_r": -0.0191,
+      "spearman_r": -0.0316,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "average_playtime",
+      "pearson_r": 0.0135,
+      "spearman_r": 0.0901,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "required_age",
+      "field_2": "median_playtime",
+      "pearson_r": 0.0514,
+      "spearman_r": 0.0898,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "owners_mid",
+      "pearson_r": -0.004,
+      "spearman_r": 0.14,
+      "is_post_launch": false
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "positive_ratings",
+      "pearson_r": 0.0036,
+      "spearman_r": 0.2877,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "negative_ratings",
+      "pearson_r": 0.0021,
+      "spearman_r": 0.1952,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "review_score",
+      "pearson_r": -0.0236,
+      "spearman_r": 0.1464,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "average_playtime",
+      "pearson_r": 0.0025,
+      "spearman_r": 0.1486,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "achievements",
+      "field_2": "median_playtime",
+      "pearson_r": -0.0009,
+      "spearman_r": 0.1475,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "owners_mid",
+      "field_2": "positive_ratings",
+      "pearson_r": 0.7604,
+      "spearman_r": 0.7097,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "owners_mid",
+      "field_2": "negative_ratings",
+      "pearson_r": 0.6007,
+      "spearman_r": 0.7318,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "owners_mid",
+      "field_2": "review_score",
+      "pearson_r": 0.085,
+      "spearman_r": 0.0153,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "owners_mid",
+      "field_2": "average_playtime",
+      "pearson_r": 0.4199,
+      "spearman_r": 0.7151,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "owners_mid",
+      "field_2": "median_playtime",
+      "pearson_r": 0.2974,
+      "spearman_r": 0.7154,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "positive_ratings",
+      "field_2": "negative_ratings",
+      "pearson_r": 0.9015,
+      "spearman_r": 0.8265,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "positive_ratings",
+      "field_2": "review_score",
+      "pearson_r": 0.0695,
+      "spearman_r": 0.2144,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "positive_ratings",
+      "field_2": "average_playtime",
+      "pearson_r": 0.5659,
+      "spearman_r": 0.5998,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "positive_ratings",
+      "field_2": "median_playtime",
+      "pearson_r": 0.2896,
+      "spearman_r": 0.6005,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "negative_ratings",
+      "field_2": "review_score",
+      "pearson_r": 0.003,
+      "spearman_r": -0.2986,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "negative_ratings",
+      "field_2": "average_playtime",
+      "pearson_r": 0.5902,
+      "spearman_r": 0.6003,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "negative_ratings",
+      "field_2": "median_playtime",
+      "pearson_r": 0.2186,
+      "spearman_r": 0.6007,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "review_score",
+      "field_2": "average_playtime",
+      "pearson_r": 0.0139,
+      "spearman_r": 0.0495,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "review_score",
+      "field_2": "median_playtime",
+      "pearson_r": 0.0612,
+      "spearman_r": 0.0501,
+      "is_post_launch": true
+    },
+    {
+      "field_1": "average_playtime",
+      "field_2": "median_playtime",
+      "pearson_r": 0.4838,
+      "spearman_r": 0.999,
+      "is_post_launch": true
+    }
+  ]
+}

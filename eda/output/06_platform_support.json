@@ -1,0 +1,47 @@
+{
+  "table_name": "06_platform_support",
+  "insight": "Mac-supported games average the highest estimated owners (172,935). 1500 games support Windows vs 443 Mac and 286 Linux.",
+  "row_count": 3,
+  "columns": [
+    "platform",
+    "game_count",
+    "pct_of_total",
+    "avg_owners",
+    "avg_review_score_post_launch",
+    "pct_Low",
+    "pct_Medium",
+    "pct_High"
+  ],
+  "data": [
+    {
+      "platform": "Windows",
+      "game_count": 1500,
+      "pct_of_total": 100.0,
+      "avg_owners": 106620.0,
+      "avg_review_score_post_launch": 0.7152,
+      "pct_Low": 68.67,
+      "pct_Medium": 22.67,
+      "pct_High": 8.67
+    },
+    {
+      "platform": "Mac",
+      "game_count": 443,
+      "pct_of_total": 29.53,
+      "avg_owners": 172935.0,
+      "avg_review_score_post_launch": 0.7493,
+      "pct_Low": 58.92,
+      "pct_Medium": 27.09,
+      "pct_High": 14.0
+    },
+    {
+      "platform": "Linux",
+      "game_count": 286,
+      "pct_of_total": 19.07,
+      "avg_owners": 164580.0,
+      "avg_review_score_post_launch": 0.7605,
+      "pct_Low": 55.59,
+      "pct_Medium": 29.37,
+      "pct_High": 15.03
+    }
+  ]
+}

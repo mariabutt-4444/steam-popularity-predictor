@@ -1,0 +1,43 @@
+{
+  "table_name": "05_free_vs_paid",
+  "insight": "Free-to-play games (138 titles) average 154,529 estimated owners vs 101,766 for paid (1.5x difference), demonstrating the scale advantage of the F2P model.",
+  "row_count": 2,
+  "columns": [
+    "category",
+    "game_count",
+    "pct_of_total",
+    "avg_owners",
+    "median_owners",
+    "avg_review_score_post_launch",
+    "avg_playtime_post_launch",
+    "pct_Low",
+    "pct_Medium",
+    "pct_High"
+  ],
+  "data": [
+    {
+      "category": "Free",
+      "game_count": 138,
+      "pct_of_total": 9.2,
+      "avg_owners": 154529.0,
+      "median_owners": 35000.0,
+      "avg_review_score_post_launch": 0.7104,
+      "avg_playtime_post_launch": 207.0,
+      "pct_Low": 44.2,
+      "pct_Medium": 40.58,
+      "pct_High": 15.22
+    },
+    {
+      "category": "Paid",
+      "game_count": 1362,
+      "pct_of_total": 90.8,
+      "avg_owners": 101766.0,
+      "median_owners": 10000.0,
+      "avg_review_score_post_launch": 0.7157,
+      "avg_playtime_post_launch": 93.0,
+      "pct_Low": 71.15,
+      "pct_Medium": 20.85,
+      "pct_High": 8.0
+    }
+  ]
+}

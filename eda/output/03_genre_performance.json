@@ -1,0 +1,199 @@
+{
+  "table_name": "03_genre_performance",
+  "insight": "Utilities leads with avg 290,000 estimated owners across 7 games. 23 genres analysed; 7 have fewer than 10 games (flagged as low-sample).",
+  "row_count": 23,
+  "columns": [
+    "genre",
+    "game_count",
+    "avg_owners",
+    "avg_review_score_post_launch",
+    "avg_price",
+    "low_sample_flag"
+  ],
+  "data": [
+    {
+      "genre": "Utilities",
+      "game_count": 7,
+      "avg_owners": 290000.0,
+      "avg_review_score_post_launch": 0.7031,
+      "avg_price": 0.8257,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Massively Multiplayer",
+      "game_count": 42,
+      "avg_owners": 265595.2381,
+      "avg_review_score_post_launch": 0.5977,
+      "avg_price": 5.0881,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Free to Play",
+      "game_count": 87,
+      "avg_owners": 172413.7931,
+      "avg_review_score_post_launch": 0.6765,
+      "avg_price": 0.14,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "RPG",
+      "game_count": 257,
+      "avg_owners": 166634.2412,
+      "avg_review_score_post_launch": 0.7222,
+      "avg_price": 6.8577,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Web Publishing",
+      "game_count": 1,
+      "avg_owners": 150000.0,
+      "avg_review_score_post_launch": 0.9056,
+      "avg_price": 18.99,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Simulation",
+      "game_count": 295,
+      "avg_owners": 125661.0169,
+      "avg_review_score_post_launch": 0.6496,
+      "avg_price": 6.5505,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Strategy",
+      "game_count": 283,
+      "avg_owners": 124452.2968,
+      "avg_review_score_post_launch": 0.6938,
+      "avg_price": 6.8347,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Action",
+      "game_count": 679,
+      "avg_owners": 119609.7202,
+      "avg_review_score_post_launch": 0.7163,
+      "avg_price": 5.933,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Sports",
+      "game_count": 70,
+      "avg_owners": 105071.4286,
+      "avg_review_score_post_launch": 0.6566,
+      "avg_price": 7.2141,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Adventure",
+      "game_count": 519,
+      "avg_owners": 101560.6936,
+      "avg_review_score_post_launch": 0.7155,
+      "avg_price": 6.0939,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Racing",
+      "game_count": 66,
+      "avg_owners": 95909.0909,
+      "avg_review_score_post_launch": 0.6459,
+      "avg_price": 5.9286,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Indie",
+      "game_count": 1091,
+      "avg_owners": 67873.5105,
+      "avg_review_score_post_launch": 0.7244,
+      "avg_price": 5.1225,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Nudity",
+      "game_count": 17,
+      "avg_owners": 57647.0588,
+      "avg_review_score_post_launch": 0.6724,
+      "avg_price": 6.2253,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Casual",
+      "game_count": 564,
+      "avg_owners": 45017.7305,
+      "avg_review_score_post_launch": 0.7057,
+      "avg_price": 4.1294,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Education",
+      "game_count": 2,
+      "avg_owners": 42500.0,
+      "avg_review_score_post_launch": 0.5207,
+      "avg_price": 0.0,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Video Production",
+      "game_count": 2,
+      "avg_owners": 42500.0,
+      "avg_review_score_post_launch": 0.6986,
+      "avg_price": 0.0,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Sexual Content",
+      "game_count": 11,
+      "avg_owners": 40000.0,
+      "avg_review_score_post_launch": 0.8116,
+      "avg_price": 4.3082,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Design & Illustration",
+      "game_count": 5,
+      "avg_owners": 38000.0,
+      "avg_review_score_post_launch": 0.7508,
+      "avg_price": 45.574,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Early Access",
+      "game_count": 163,
+      "avg_owners": 30613.4969,
+      "avg_review_score_post_launch": 0.6898,
+      "avg_price": 7.5534,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Gore",
+      "game_count": 32,
+      "avg_owners": 26562.5,
+      "avg_review_score_post_launch": 0.5851,
+      "avg_price": 6.2281,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Violent",
+      "game_count": 44,
+      "avg_owners": 23750.0,
+      "avg_review_score_post_launch": 0.6145,
+      "avg_price": 6.4905,
+      "low_sample_flag": false
+    },
+    {
+      "genre": "Animation & Modeling",
+      "game_count": 4,
+      "avg_owners": 10000.0,
+      "avg_review_score_post_launch": 0.625,
+      "avg_price": 53.9425,
+      "low_sample_flag": true
+    },
+    {
+      "genre": "Game Development",
+      "game_count": 2,
+      "avg_owners": 10000.0,
+      "avg_review_score_post_launch": 0.75,
+      "avg_price": 104.995,
+      "low_sample_flag": true
+    }
+  ]
+}

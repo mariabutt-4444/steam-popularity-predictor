@@ -1,0 +1,112 @@
+{
+  "table_name": "07_yearly_trends",
+  "insight": "Release volume peaked at 425 games in 2018 (in this sample). The most recent year shows 11.54% free-to-play share. Note: yearly counts are from a ~1,500-game stratified sample, not the full Steam catalogue.",
+  "row_count": 14,
+  "columns": [
+    "release_year",
+    "games_released",
+    "avg_price",
+    "pct_free",
+    "avg_owners"
+  ],
+  "data": [
+    {
+      "release_year": 2006,
+      "games_released": 3,
+      "avg_price": 11.6567,
+      "pct_free": 0.0,
+      "avg_owners": 378333.3333
+    },
+    {
+      "release_year": 2007,
+      "games_released": 6,
+      "avg_price": 4.3233,
+      "pct_free": 0.0,
+      "avg_owners": 351666.6667
+    },
+    {
+      "release_year": 2008,
+      "games_released": 5,
+      "avg_price": 6.652,
+      "pct_free": 20.0,
+      "avg_owners": 917000.0
+    },
+    {
+      "release_year": 2009,
+      "games_released": 17,
+      "avg_price": 6.9206,
+      "pct_free": 0.0,
+      "avg_owners": 562058.8235
+    },
+    {
+      "release_year": 2010,
+      "games_released": 10,
+      "avg_price": 10.706,
+      "pct_free": 0.0,
+      "avg_owners": 519500.0
+    },
+    {
+      "release_year": 2011,
+      "games_released": 25,
+      "avg_price": 8.106,
+      "pct_free": 0.0,
+      "avg_owners": 649200.0
+    },
+    {
+      "release_year": 2012,
+      "games_released": 20,
+      "avg_price": 8.365,
+      "pct_free": 0.0,
+      "avg_owners": 519500.0
+    },
+    {
+      "release_year": 2013,
+      "games_released": 21,
+      "avg_price": 9.0667,
+      "pct_free": 4.76,
+      "avg_owners": 832857.1429
+    },
+    {
+      "release_year": 2014,
+      "games_released": 72,
+      "avg_price": 7.0294,
+      "pct_free": 5.56,
+      "avg_owners": 229097.2222
+    },
+    {
+      "release_year": 2015,
+      "games_released": 145,
+      "avg_price": 6.2857,
+      "pct_free": 5.52,
+      "avg_owners": 113931.0345
+    },
+    {
+      "release_year": 2016,
+      "games_released": 252,
+      "avg_price": 5.6022,
+      "pct_free": 13.1,
+      "avg_owners": 90158.7302
+    },
+    {
+      "release_year": 2017,
+      "games_released": 369,
+      "avg_price": 5.8562,
+      "pct_free": 9.21,
+      "avg_owners": 68157.1816
+    },
+    {
+      "release_year": 2018,
+      "games_released": 425,
+      "avg_price": 5.5617,
+      "pct_free": 9.88,
+      "avg_owners": 21635.2941
+    },
+    {
+      "release_year": 2019,
+      "games_released": 130,
+      "avg_price": 6.2647,
+      "pct_free": 11.54,
+      "avg_owners": 24307.6923
+    }
+  ]
+}

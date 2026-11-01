@@ -1,0 +1,70 @@
+{
+  "table_name": "04_price_band_analysis",
+  "insight": "The $20-40 band has the highest avg review score (0.782). Free games show 15.22% High-tier representation. Premium games tend toward higher review scores but smaller audiences.",
+  "row_count": 6,
+  "columns": [
+    "price_band",
+    "game_count",
+    "avg_review_score_post_launch",
+    "avg_owners",
+    "pct_Low",
+    "pct_Medium",
+    "pct_High"
+  ],
+  "data": [
+    {
+      "price_band": "Free",
+      "game_count": 138,
+      "avg_review_score_post_launch": 0.7104,
+      "avg_owners": 154529.0,
+      "pct_Low": 44.2,
+      "pct_Medium": 40.58,
+      "pct_High": 15.22
+    },
+    {
+      "price_band": "<$5",
+      "game_count": 715,
+      "avg_review_score_post_launch": 0.6832,
+      "avg_owners": 44154.0,
+      "pct_Low": 76.36,
+      "pct_Medium": 20.56,
+      "pct_High": 3.08
+    },
+    {
+      "price_band": "$5-10",
+      "game_count": 373,
+      "avg_review_score_post_launch": 0.7462,
+      "avg_owners": 99330.0,
+      "pct_Low": 68.9,
+      "pct_Medium": 21.18,
+      "pct_High": 9.92
+    },
+    {
+      "price_band": "$10-20",
+      "game_count": 233,
+      "avg_review_score_post_launch": 0.7558,
+      "avg_owners": 192575.0,
+      "pct_Low": 63.09,
+      "pct_Medium": 20.6,
+      "pct_High": 16.31
+    },
+    {
+      "price_band": "$20-40",
+      "game_count": 36,
+      "avg_review_score_post_launch": 0.782,
+      "avg_owners": 478750.0,
+      "pct_Low": 44.44,
+      "pct_Medium": 27.78,
+      "pct_High": 27.78
+    },
+    {
+      "price_band": "$40+",
+      "game_count": 5,
+      "avg_review_score_post_launch": 0.7526,
+      "avg_owners": 1576000.0,
+      "pct_Low": 60.0,
+      "pct_Medium": 0.0,
+      "pct_High": 40.0
+    }
+  ]
+}
