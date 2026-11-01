@@ -342,12 +342,12 @@ def compute_correlation_matrix(df: pd.DataFrame) -> tuple[dict, str]:
     corr = corr.reset_index().rename(columns={"index": "field"})
 
     # Find strongest non-trivial positive correlation
-    corr_vals = df[NUMERIC_COLS].corr()
-    np.fill_diagonal(corr_vals.values, 0)
-    max_idx = np.unravel_index(np.argmax(corr_vals.abs().values), corr_vals.shape)
+    corr_vals = df[NUMERIC_COLS].corr().to_numpy(copy=True)
+    np.fill_diagonal(corr_vals, 0)
+    max_idx = np.unravel_index(np.argmax(np.abs(corr_vals)), corr_vals.shape)
     f1 = NUMERIC_COLS[max_idx[0]]
     f2 = NUMERIC_COLS[max_idx[1]]
-    max_corr = corr_vals.values[max_idx]
+    max_corr = corr_vals[max_idx]
 
     insight = (
         f"The strongest correlation is between {f1} and {f2} "

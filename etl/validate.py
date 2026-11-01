@@ -56,7 +56,7 @@ class Game(BaseModel):
     owners_min: int = Field(ge=0, default=0)
     owners_max: int = Field(ge=0, default=0)
     owners_mid: float = Field(ge=0.0, default=0.0)
-    popularity_tier: str = "Low"
+    popularity_tier: str = Field(pattern="^(Low|Medium|High)$", default="Low")
 
     # Post-launch outcomes (EDA only – DATA LEAKAGE if used as features)
     positive_ratings: int = Field(ge=0, default=0)
