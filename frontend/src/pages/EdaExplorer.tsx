@@ -239,7 +239,7 @@ export const EdaExplorer: React.FC = () => {
     <div className="space-y-6">
       {/* Header and Table Tabs */}
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">
           Exploratory Data Analysis Explorer
         </h1>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
@@ -252,11 +252,10 @@ export const EdaExplorer: React.FC = () => {
             <button
               key={tab.table_name}
               onClick={() => setActiveTable(tab.table_name)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
-                activeTable === tab.table_name
-                  ? 'bg-sky-600 text-white shadow-sm'
-                  : 'bg-white dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700/60'
-              }`}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${activeTable === tab.table_name
+                ? 'bg-rose-600 text-white shadow-sm'
+                : 'bg-white dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700/60'
+                }`}
             >
               {formatTableName(tab.table_name)}
             </button>
@@ -265,13 +264,13 @@ export const EdaExplorer: React.FC = () => {
       </div>
 
       {/* Main EDA Content Container */}
-      <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm p-6 space-y-6">
+      <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm p-6 space-y-6">
         {/* Insight Banner */}
-        <div className="p-4 bg-gradient-to-r from-sky-500/10 via-sky-500/5 to-transparent border-l-4 border-sky-500 rounded-r-xl">
+        <div className="p-4 bg-gradient-to-r from-rose-500/10 via-rose-500/5 to-transparent border-l-4 border-rose-500 rounded-r-xl">
           <div className="flex items-start gap-3">
-            <Sparkles className="w-5 h-5 text-sky-500 shrink-0 mt-0.5" />
+            <Sparkles className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-sky-600 dark:text-sky-400">
+              <span className="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
                 Auto-Generated Finding
               </span>
               <p className="text-sm text-slate-800 dark:text-slate-200 font-medium mt-0.5">
@@ -290,7 +289,7 @@ export const EdaExplorer: React.FC = () => {
               placeholder="Search table values..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500"
+              className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500"
             />
           </div>
 
@@ -298,31 +297,28 @@ export const EdaExplorer: React.FC = () => {
             <div className="flex bg-slate-100 dark:bg-slate-800 p-0.5 rounded-lg border border-slate-200 dark:border-slate-700">
               <button
                 onClick={() => setViewMode('both')}
-                className={`px-2.5 py-1 text-xs rounded-md transition ${
-                  viewMode === 'both'
-                    ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-xs font-semibold'
-                    : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                className={`px-2.5 py-1 text-xs rounded-md transition ${viewMode === 'both'
+                  ? 'bg-white dark:bg-slate-700 text-slate-800 dark:text-white shadow-xs font-semibold'
+                  : 'text-slate-500 hover:text-slate-800 dark:hover:text-white'
+                  }`}
               >
                 All
               </button>
               <button
                 onClick={() => setViewMode('chart')}
-                className={`px-2.5 py-1 text-xs rounded-md transition flex items-center gap-1 ${
-                  viewMode === 'chart'
-                    ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-xs font-semibold'
-                    : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                className={`px-2.5 py-1 text-xs rounded-md transition flex items-center gap-1 ${viewMode === 'chart'
+                  ? 'bg-white dark:bg-slate-700 text-slate-800 dark:text-white shadow-xs font-semibold'
+                  : 'text-slate-500 hover:text-slate-800 dark:hover:text-white'
+                  }`}
               >
                 <BarChart2 className="w-3.5 h-3.5" /> Chart
               </button>
               <button
                 onClick={() => setViewMode('table')}
-                className={`px-2.5 py-1 text-xs rounded-md transition flex items-center gap-1 ${
-                  viewMode === 'table'
-                    ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-xs font-semibold'
-                    : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                className={`px-2.5 py-1 text-xs rounded-md transition flex items-center gap-1 ${viewMode === 'table'
+                  ? 'bg-white dark:bg-slate-700 text-slate-800 dark:text-white shadow-xs font-semibold'
+                  : 'text-slate-500 hover:text-slate-800 dark:hover:text-white'
+                  }`}
               >
                 <TableIcon className="w-3.5 h-3.5" /> Table
               </button>
@@ -340,7 +336,7 @@ export const EdaExplorer: React.FC = () => {
         {/* Loading Spinner */}
         {loading ? (
           <div className="h-64 flex items-center justify-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-500"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-rose-500"></div>
           </div>
         ) : (
           <>

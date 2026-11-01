@@ -91,7 +91,7 @@ export const GamesBrowser: React.FC = () => {
       case 'High':
         return 'bg-amber-500/10 text-amber-500 border-amber-500/20';
       case 'Medium':
-        return 'bg-sky-500/10 text-sky-500 border-sky-500/20';
+        return 'bg-rose-500/10 text-rose-500 border-rose-500/20';
       default:
         return 'bg-slate-500/10 text-slate-400 border-slate-500/20';
     }
@@ -101,7 +101,7 @@ export const GamesBrowser: React.FC = () => {
     <div className="space-y-6">
       {/* Title */}
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">
           Games Catalog Browser
         </h1>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
@@ -110,7 +110,7 @@ export const GamesBrowser: React.FC = () => {
       </div>
 
       {/* Filter Bar */}
-      <div className="p-4 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col md:flex-row gap-4 justify-between items-center">
+      <div className="p-4 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col md:flex-row gap-4 justify-between items-center">
         {/* Search Input */}
         <div className="relative w-full md:w-80">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
@@ -122,7 +122,7 @@ export const GamesBrowser: React.FC = () => {
               setSearch(e.target.value);
               setPage(1);
             }}
-            className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500"
+            className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500"
           />
         </div>
 
@@ -135,7 +135,7 @@ export const GamesBrowser: React.FC = () => {
               setSelectedGenre(e.target.value);
               setPage(1);
             }}
-            className="px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500"
+            className="px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500"
           >
             <option value="">All Genres</option>
             {genres.map((g) => (
@@ -152,7 +152,7 @@ export const GamesBrowser: React.FC = () => {
               setSelectedTier(e.target.value);
               setPage(1);
             }}
-            className="px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500"
+            className="px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500"
           >
             <option value="">All Popularity Tiers</option>
             <option value="Low">Low (≤ 20,000)</option>
@@ -169,7 +169,7 @@ export const GamesBrowser: React.FC = () => {
                 setSelectedTier('');
                 setPage(1);
               }}
-              className="text-xs text-sky-500 hover:underline px-2 py-1"
+              className="text-xs text-rose-500 hover:underline px-2 py-1"
             >
               Clear filters
             </button>
@@ -178,10 +178,10 @@ export const GamesBrowser: React.FC = () => {
       </div>
 
       {/* Table */}
-      <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm overflow-hidden">
+      <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm overflow-hidden">
         {loading ? (
           <div className="h-96 flex items-center justify-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-500"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-rose-500"></div>
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -208,7 +208,7 @@ export const GamesBrowser: React.FC = () => {
                       className="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition-colors cursor-pointer"
                     >
                       <td className="px-5 py-3.5 font-mono text-slate-400">#{game.appid}</td>
-                      <td className="px-5 py-3.5 font-medium text-slate-900 dark:text-white max-w-xs truncate">
+                      <td className="px-5 py-3.5 font-medium text-slate-800 dark:text-white max-w-xs truncate">
                         {game.name}
                       </td>
                       <td className="px-5 py-3.5 text-slate-500">{game.release_year || 'N/A'}</td>
@@ -246,7 +246,7 @@ export const GamesBrowser: React.FC = () => {
                             e.stopPropagation();
                             openDetail(game.appid);
                           }}
-                          className="px-2.5 py-1 text-xs text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-950/40 rounded transition"
+                          className="px-2.5 py-1 text-xs text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded transition"
                         >
                           Inspect
                         </button>
@@ -309,15 +309,15 @@ export const GamesBrowser: React.FC = () => {
 
       {/* Detail Slide-Over Drawer */}
       {selectedAppid !== null && (
-        <div className="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-xs flex justify-end">
-          <div className="w-full max-w-lg bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 h-full p-6 overflow-y-auto space-y-6 shadow-2xl">
+        <div className="fixed inset-0 z-50 bg-slate-800/50 backdrop-blur-xs flex justify-end">
+          <div className="w-full max-w-lg bg-white dark:bg-slate-800 border-l border-slate-200 dark:border-slate-800 h-full p-6 overflow-y-auto space-y-6 shadow-2xl">
             {/* Drawer Header */}
             <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
               <div>
                 <span className="text-xs font-mono text-slate-400">
                   AppID: {selectedAppid}
                 </span>
-                <h2 className="text-lg font-bold text-slate-900 dark:text-white mt-0.5">
+                <h2 className="text-lg font-bold text-slate-800 dark:text-white mt-0.5">
                   {detailGame?.name || 'Loading Game...'}
                 </h2>
               </div>
@@ -331,7 +331,7 @@ export const GamesBrowser: React.FC = () => {
 
             {detailLoading || !detailGame ? (
               <div className="h-64 flex items-center justify-center">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-500"></div>
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-rose-500"></div>
               </div>
             ) : (
               <div className="space-y-6 text-xs">
@@ -353,7 +353,7 @@ export const GamesBrowser: React.FC = () => {
                     <span className="text-slate-400 block text-[10px] uppercase font-bold">
                       Price
                     </span>
-                    <span className="text-sm font-bold text-slate-900 dark:text-white mt-1 block">
+                    <span className="text-sm font-bold text-slate-800 dark:text-white mt-1 block">
                       {detailGame.is_free ? 'Free to Play' : `$${detailGame.price.toFixed(2)}`}
                     </span>
                   </div>
@@ -361,43 +361,43 @@ export const GamesBrowser: React.FC = () => {
 
                 {/* Pre-launch Model Features Section */}
                 <div>
-                  <h3 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[11px] mb-2.5 text-sky-500">
+                  <h3 className="font-bold text-slate-800 dark:text-white uppercase tracking-wider text-[11px] mb-2.5 text-rose-500">
                     Pre-Launch Predictor Features (Stage 2/3 Inputs)
                   </h3>
                   <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2.5">
                     <div className="flex justify-between py-1 border-b border-slate-200/60 dark:border-slate-700/50">
                       <span className="text-slate-500">Release Date</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         {detailGame.release_date || 'N/A'} (Month: {detailGame.release_month})
                       </span>
                     </div>
                     <div className="flex justify-between py-1 border-b border-slate-200/60 dark:border-slate-700/50">
                       <span className="text-slate-500">Developer</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         {detailGame.developer || 'N/A'}
                       </span>
                     </div>
                     <div className="flex justify-between py-1 border-b border-slate-200/60 dark:border-slate-700/50">
                       <span className="text-slate-500">Publisher</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         {detailGame.publisher || 'N/A'}
                       </span>
                     </div>
                     <div className="flex justify-between py-1 border-b border-slate-200/60 dark:border-slate-700/50">
                       <span className="text-slate-500">Supported Platforms</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         {detailGame.platforms}
                       </span>
                     </div>
                     <div className="flex justify-between py-1 border-b border-slate-200/60 dark:border-slate-700/50">
                       <span className="text-slate-500">Required Age / Achievements</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         Age: {detailGame.required_age}+ | Achievements: {detailGame.achievements}
                       </span>
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-slate-500">Genres</span>
-                      <span className="font-medium text-slate-900 dark:text-white text-right max-w-xs">
+                      <span className="font-medium text-slate-800 dark:text-white text-right max-w-xs">
                         {detailGame.genres || 'N/A'}
                       </span>
                     </div>
@@ -413,7 +413,7 @@ export const GamesBrowser: React.FC = () => {
                   <div className="bg-amber-500/5 border border-amber-500/20 p-4 rounded-xl space-y-2">
                     <div className="flex justify-between">
                       <span className="text-slate-500">Estimated Owners</span>
-                      <span className="font-mono font-bold text-slate-900 dark:text-white">
+                      <span className="font-mono font-bold text-slate-800 dark:text-white">
                         {detailGame.owners} (Mid: {detailGame.owners_mid.toLocaleString()})
                       </span>
                     </div>
@@ -427,7 +427,7 @@ export const GamesBrowser: React.FC = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500">Average Forever Playtime</span>
-                      <span className="font-medium text-slate-900 dark:text-white">
+                      <span className="font-medium text-slate-800 dark:text-white">
                         {detailGame.average_playtime} mins (Median: {detailGame.median_playtime}{' '}
                         mins)
                       </span>
@@ -441,7 +441,7 @@ export const GamesBrowser: React.FC = () => {
                     href={`https://store.steampowered.com/app/${detailGame.appid}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="w-full py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white rounded-lg text-center font-medium transition flex items-center justify-center gap-2"
+                    className="w-full py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-white rounded-lg text-center font-medium transition flex items-center justify-center gap-2"
                   >
                     Open on Steam Store <ExternalLink className="w-4 h-4" />
                   </a>

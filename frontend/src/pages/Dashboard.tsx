@@ -72,7 +72,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   if (loading) {
     return (
       <div className="flex h-96 items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-500"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-rose-500"></div>
       </div>
     );
   }
@@ -127,9 +127,9 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-8">
       {/* Top Welcome / Pitch */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-gradient-to-r from-sky-900/30 via-slate-800/40 to-slate-900/40 border border-slate-700/50 rounded-2xl">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-gradient-to-r from-rose-900/30 via-slate-800/40 to-slate-800/40 border border-slate-700/50 rounded-2xl">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">
             Steam Game Popularity Predictor
           </h1>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-2xl">
@@ -139,7 +139,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
         <div className="flex gap-3">
           <button
             onClick={() => onNavigate('eda')}
-            className="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-sm font-medium transition shadow-sm flex items-center gap-1.5"
+            className="px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-sm font-medium transition shadow-sm flex items-center gap-1.5"
           >
             Explore EDA <ArrowRight className="w-4 h-4" />
           </button>
@@ -148,16 +148,16 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
 
       {/* KPI Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div className="p-5 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+        <div className="p-5 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Total Validated Games
             </span>
-            <div className="p-2 bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 rounded-lg">
+            <div className="p-2 bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 rounded-lg">
               <Gamepad2 className="w-5 h-5" />
             </div>
           </div>
-          <div className="text-3xl font-extrabold text-slate-900 dark:text-white mt-3">
+          <div className="text-3xl font-extrabold text-slate-800 dark:text-white mt-3">
             {totalGames.toLocaleString()}
           </div>
           <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-1 inline-block">
@@ -165,7 +165,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           </span>
         </div>
 
-        <div className="p-5 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+        <div className="p-5 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Free-to-Play Ratio
@@ -174,7 +174,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
               <Gift className="w-5 h-5" />
             </div>
           </div>
-          <div className="text-3xl font-extrabold text-slate-900 dark:text-white mt-3">
+          <div className="text-3xl font-extrabold text-slate-800 dark:text-white mt-3">
             {pctFree}%
           </div>
           <span className="text-xs text-slate-500 dark:text-slate-400 mt-1 inline-block">
@@ -182,7 +182,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           </span>
         </div>
 
-        <div className="p-5 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+        <div className="p-5 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Median Launch Price
@@ -191,7 +191,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
               <DollarSign className="w-5 h-5" />
             </div>
           </div>
-          <div className="text-3xl font-extrabold text-slate-900 dark:text-white mt-3">
+          <div className="text-3xl font-extrabold text-slate-800 dark:text-white mt-3">
             ${medianPrice.toFixed(2)}
           </div>
           <span className="text-xs text-slate-500 dark:text-slate-400 mt-1 inline-block">
@@ -199,7 +199,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           </span>
         </div>
 
-        <div className="p-5 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+        <div className="p-5 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Rejected (Dead-letter)
@@ -208,7 +208,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
               <AlertTriangle className="w-5 h-5" />
             </div>
           </div>
-          <div className="text-3xl font-extrabold text-slate-900 dark:text-white mt-3">
+          <div className="text-3xl font-extrabold text-slate-800 dark:text-white mt-3">
             {rejectedCount}
           </div>
           <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-1 inline-block">
@@ -220,11 +220,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
       {/* Visual Analytics Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Tier Distribution Donut */}
-        <div className="p-6 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col justify-between">
+        <div className="p-6 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between">
-              <h2 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                <Layers className="w-4 h-4 text-sky-500" />
+              <h2 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                <Layers className="w-4 h-4 text-rose-500" />
                 Popularity Tier Distribution
               </h2>
               <span className="text-xs text-amber-500 font-semibold bg-amber-500/10 px-2 py-0.5 rounded">
@@ -284,10 +284,10 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
         </div>
 
         {/* Releases Over Time Line Chart */}
-        <div className="lg:col-span-2 p-6 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col justify-between">
+        <div className="lg:col-span-2 p-6 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between">
-              <h2 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <h2 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-emerald-500" />
                 Yearly Release Momentum
               </h2>

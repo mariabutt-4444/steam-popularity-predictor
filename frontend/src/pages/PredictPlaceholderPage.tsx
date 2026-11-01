@@ -25,7 +25,7 @@ export const PredictPlaceholderPage: React.FC = () => {
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-500 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
             <Lock className="w-3 h-3" /> Coming in Project 2
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">
             Pre-Launch Popularity Tier Predictor
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xl">
@@ -42,10 +42,10 @@ export const PredictPlaceholderPage: React.FC = () => {
       </div>
 
       {/* Simulator Form (Disabled with aesthetic overlay) */}
-      <div className="relative bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm p-8 space-y-6">
+      <div className="relative bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm p-8 space-y-6">
         {/* Architectural Note Box */}
-        <div className="p-4 bg-sky-50 dark:bg-sky-950/30 border border-sky-200 dark:border-sky-900/50 rounded-xl text-xs text-sky-800 dark:text-sky-300 flex items-start gap-3">
-          <Info className="w-5 h-5 shrink-0 text-sky-500 mt-0.5" />
+        <div className="p-4 bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900/50 rounded-xl text-xs text-rose-800 dark:text-rose-300 flex items-start gap-3">
+          <Info className="w-5 h-5 shrink-0 text-rose-500 mt-0.5" />
           <div className="space-y-1">
             <p className="font-semibold">Zero Restructuring Guarantee:</p>
             <p>
@@ -77,7 +77,7 @@ export const PredictPlaceholderPage: React.FC = () => {
 
           <div>
             <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-              <Calendar className="w-4 h-4 text-sky-500" />
+              <Calendar className="w-4 h-4 text-rose-500" />
               Planned Release Month
             </label>
             <select
@@ -129,15 +129,15 @@ export const PredictPlaceholderPage: React.FC = () => {
             </label>
             <div className="flex gap-4 pt-2">
               <label className="flex items-center gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
-                <input type="checkbox" checked disabled className="rounded text-sky-600" />
+                <input type="checkbox" checked disabled className="rounded text-rose-600" />
                 Windows
               </label>
               <label className="flex items-center gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
-                <input type="checkbox" checked disabled className="rounded text-sky-600" />
+                <input type="checkbox" checked disabled className="rounded text-rose-600" />
                 macOS
               </label>
               <label className="flex items-center gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
-                <input type="checkbox" checked disabled className="rounded text-sky-600" />
+                <input type="checkbox" checked disabled className="rounded text-rose-600" />
                 Linux
               </label>
             </div>

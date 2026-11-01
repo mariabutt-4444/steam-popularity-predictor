@@ -56,7 +56,7 @@ export const PipelinePage: React.FC = () => {
     <div className="space-y-8">
       {/* Page Header */}
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">
           ETL Pipeline & Data Quality Monitor
         </h1>
         <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
@@ -65,13 +65,13 @@ export const PipelinePage: React.FC = () => {
       </div>
 
       {/* Trigger Pipeline Section */}
-      <div className="p-6 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-4">
+      <div className="p-6 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <Server className="w-4 h-4 text-sky-500" />
+          <h2 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2">
+            <Server className="w-4 h-4 text-rose-500" />
             Trigger Pipeline Run
           </h2>
-          <span className="text-xs bg-sky-500/10 text-sky-500 px-2.5 py-0.5 rounded font-mono font-medium">
+          <span className="text-xs bg-rose-500/10 text-rose-500 px-2.5 py-0.5 rounded font-mono font-medium">
             POST /api/pipeline/run
           </span>
         </div>
@@ -84,7 +84,7 @@ export const PipelinePage: React.FC = () => {
             <select
               value={source}
               onChange={(e) => setSource(e.target.value as 'csv' | 'api')}
-              className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500"
+              className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500"
             >
               <option value="csv">Fallback / Benchmark Dataset (steam.csv)</option>
               <option value="api">Live SteamSpy & Steam Store API (Throttled)</option>
@@ -99,7 +99,7 @@ export const PipelinePage: React.FC = () => {
               type="password"
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
-              className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-sky-500 font-mono"
+              className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-rose-500 font-mono"
             />
           </div>
 
@@ -107,7 +107,7 @@ export const PipelinePage: React.FC = () => {
             <button
               disabled={running}
               onClick={handleRunPipeline}
-              className="w-full py-2 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-2"
+              className="w-full py-2 bg-rose-600 hover:bg-rose-500 disabled:opacity-50 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-2"
             >
               {running ? (
                 <>
@@ -129,23 +129,23 @@ export const PipelinePage: React.FC = () => {
               <CheckCircle className="w-4 h-4" /> Pipeline Run Succeeded
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 pt-2 text-center">
-              <div className="bg-white/60 dark:bg-slate-900/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
+              <div className="bg-white/60 dark:bg-slate-800/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
                 <span className="text-[10px] uppercase font-bold text-slate-400">Extracted</span>
                 <p className="text-base font-extrabold">{runResult.metrics.extracted}</p>
               </div>
-              <div className="bg-white/60 dark:bg-slate-900/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
+              <div className="bg-white/60 dark:bg-slate-800/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
                 <span className="text-[10px] uppercase font-bold text-slate-400">Transformed</span>
                 <p className="text-base font-extrabold">{runResult.metrics.transformed}</p>
               </div>
-              <div className="bg-white/60 dark:bg-slate-900/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
+              <div className="bg-white/60 dark:bg-slate-800/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
                 <span className="text-[10px] uppercase font-bold text-slate-400">Valid</span>
                 <p className="text-base font-extrabold">{runResult.metrics.valid}</p>
               </div>
-              <div className="bg-white/60 dark:bg-slate-900/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
+              <div className="bg-white/60 dark:bg-slate-800/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
                 <span className="text-[10px] uppercase font-bold text-slate-400">Rejected</span>
                 <p className="text-base font-extrabold">{runResult.metrics.rejected}</p>
               </div>
-              <div className="bg-white/60 dark:bg-slate-900/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
+              <div className="bg-white/60 dark:bg-slate-800/40 p-2 rounded border border-emerald-300 dark:border-emerald-800">
                 <span className="text-[10px] uppercase font-bold text-slate-400">Loaded</span>
                 <p className="text-base font-extrabold">{runResult.metrics.loaded}</p>
               </div>
@@ -163,8 +163,8 @@ export const PipelinePage: React.FC = () => {
       </div>
 
       {/* Stage Flow Indicator Card */}
-      <div className="p-6 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
-        <h2 className="text-base font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+      <div className="p-6 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+        <h2 className="text-base font-bold text-slate-800 dark:text-white mb-4 flex items-center gap-2">
           <Database className="w-4 h-4 text-emerald-500" />
           End-to-End Pipeline Architecture Audit
         </h2>
@@ -172,7 +172,7 @@ export const PipelinePage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xs">
           <div className="p-3 bg-slate-50 dark:bg-slate-800/40 rounded-lg border border-slate-200 dark:border-slate-800">
             <span className="text-[10px] uppercase font-bold text-slate-400">Stage 1: Extract</span>
-            <p className="font-bold text-slate-900 dark:text-white mt-1">extract.py</p>
+            <p className="font-bold text-slate-800 dark:text-white mt-1">extract.py</p>
             <p className="text-slate-500 mt-1">
               SteamSpy + Store API with exponential retries and raw disk caching.
             </p>
@@ -180,7 +180,7 @@ export const PipelinePage: React.FC = () => {
 
           <div className="p-3 bg-slate-50 dark:bg-slate-800/40 rounded-lg border border-slate-200 dark:border-slate-800">
             <span className="text-[10px] uppercase font-bold text-slate-400">Stage 2: Transform</span>
-            <p className="font-bold text-slate-900 dark:text-white mt-1">transform.py</p>
+            <p className="font-bold text-slate-800 dark:text-white mt-1">transform.py</p>
             <p className="text-slate-500 mt-1">
               Pandas parsing: owners_min/max/mid, popularity_tier, binary flags, guarded review score.
             </p>
@@ -188,7 +188,7 @@ export const PipelinePage: React.FC = () => {
 
           <div className="p-3 bg-slate-50 dark:bg-slate-800/40 rounded-lg border border-slate-200 dark:border-slate-800">
             <span className="text-[10px] uppercase font-bold text-slate-400">Stage 3: Validate</span>
-            <p className="font-bold text-slate-900 dark:text-white mt-1">validate.py</p>
+            <p className="font-bold text-slate-800 dark:text-white mt-1">validate.py</p>
             <p className="text-slate-500 mt-1">
               Pydantic v2 Game model constraints. Failures audited in dead-letter table.
             </p>
@@ -196,7 +196,7 @@ export const PipelinePage: React.FC = () => {
 
           <div className="p-3 bg-slate-50 dark:bg-slate-800/40 rounded-lg border border-slate-200 dark:border-slate-800">
             <span className="text-[10px] uppercase font-bold text-slate-400">Stage 4: Load & EDA</span>
-            <p className="font-bold text-slate-900 dark:text-white mt-1">load.py & analysis.py</p>
+            <p className="font-bold text-slate-800 dark:text-white mt-1">load.py & analysis.py</p>
             <p className="text-slate-500 mt-1">
               SQLAlchemy 2.0 schema (games, genres M2M, rejected_games, eda_tables).
             </p>
@@ -205,10 +205,10 @@ export const PipelinePage: React.FC = () => {
       </div>
 
       {/* Dead-Letter Table: Rejected Games */}
-      <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm p-6 space-y-4">
+      <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm p-6 space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <h2 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2">
               <ShieldAlert className="w-4 h-4 text-purple-500" />
               Rejected Games Dead-Letter Store ({rejectedRows.length})
             </h2>
@@ -220,7 +220,7 @@ export const PipelinePage: React.FC = () => {
 
         {loading ? (
           <div className="h-32 flex items-center justify-center">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-sky-500"></div>
+            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-rose-500"></div>
           </div>
         ) : rejectedRows.length === 0 ? (
           <div className="p-8 text-center bg-slate-50 dark:bg-slate-800/30 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 text-xs text-slate-500">
