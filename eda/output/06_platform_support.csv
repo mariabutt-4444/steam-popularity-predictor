@@ -1,0 +1,4 @@
+platform,game_count,pct_of_total,avg_owners,avg_review_score_post_launch,pct_Low,pct_Medium,pct_High
+Windows,1500,100.0,106620.0,0.7152,68.67,22.67,8.67
+Mac,443,29.53,172935.0,0.7493,58.92,27.09,14.0
+Linux,286,19.07,164580.0,0.7605,55.59,29.37,15.03

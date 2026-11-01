@@ -1,0 +1,4 @@
+tier,count,percentage,imbalance_ratio_vs_High,is_imbalanced
+Low,1030,68.67,7.9,True
+Medium,340,22.67,2.6,True
+High,130,8.67,1.0,True

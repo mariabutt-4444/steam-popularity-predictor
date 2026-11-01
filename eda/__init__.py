@@ -1,1 +1,1 @@
-"""EDA analysis module for Steam Game Popularity Predictor."""
+"""EDA module for the Steam Game Popularity Predictor."""

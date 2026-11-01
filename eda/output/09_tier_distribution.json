@@ -1,0 +1,35 @@
+{
+  "table_name": "09_tier_distribution",
+  "insight": "Class imbalance detected: Low 68.67% / Medium 22.67% / High 8.67% (Low:High ratio = 7.9:1). The High tier has only 130 games — stratified sampling or class weighting will be needed for ML.",
+  "row_count": 3,
+  "columns": [
+    "tier",
+    "count",
+    "percentage",
+    "imbalance_ratio_vs_High",
+    "is_imbalanced"
+  ],
+  "data": [
+    {
+      "tier": "Low",
+      "count": 1030,
+      "percentage": 68.67,
+      "imbalance_ratio_vs_High": 7.9,
+      "is_imbalanced": true
+    },
+    {
+      "tier": "Medium",
+      "count": 340,
+      "percentage": 22.67,
+      "imbalance_ratio_vs_High": 2.6,
+      "is_imbalanced": true
+    },
+    {
+      "tier": "High",
+      "count": 130,
+      "percentage": 8.67,
+      "imbalance_ratio_vs_High": 1.0,
+      "is_imbalanced": true
+    }
+  ]
+}

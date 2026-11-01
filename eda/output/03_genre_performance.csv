@@ -1,0 +1,24 @@
+genre,game_count,avg_owners,avg_review_score_post_launch,avg_price,low_sample_flag
+Utilities,7,290000.0,0.7031,0.8257,True
+Massively Multiplayer,42,265595.2381,0.5977,5.0881,False
+Free to Play,87,172413.7931,0.6765,0.14,False
+RPG,257,166634.2412,0.7222,6.8577,False
+Web Publishing,1,150000.0,0.9056,18.99,True
+Simulation,295,125661.0169,0.6496,6.5505,False
+Strategy,283,124452.2968,0.6938,6.8347,False
+Action,679,119609.7202,0.7163,5.933,False
+Sports,70,105071.4286,0.6566,7.2141,False
+Adventure,519,101560.6936,0.7155,6.0939,False
+Racing,66,95909.0909,0.6459,5.9286,False
+Indie,1091,67873.5105,0.7244,5.1225,False
+Nudity,17,57647.0588,0.6724,6.2253,False
+Casual,564,45017.7305,0.7057,4.1294,False
+Education,2,42500.0,0.5207,0.0,True
+Video Production,2,42500.0,0.6986,0.0,True
+Sexual Content,11,40000.0,0.8116,4.3082,False
+Design & Illustration,5,38000.0,0.7508,45.574,True
+Early Access,163,30613.4969,0.6898,7.5534,False
+Gore,32,26562.5,0.5851,6.2281,False
+Violent,44,23750.0,0.6145,6.4905,False
+Animation & Modeling,4,10000.0,0.625,53.9425,True
+Game Development,2,10000.0,0.75,104.995,True
