@@ -7,10 +7,9 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - CORS_ORIGINS=*
-      - PIPELINE_API_KEY=secret-pipeline-key
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000}
+      - - PIPELINE_API_KEY=${PIPELINE_API_KEY:-change-me-locally}
       - DATABASE_URL=sqlite:////app/data/steam.db
-    volumes:
       - ./data:/app/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
